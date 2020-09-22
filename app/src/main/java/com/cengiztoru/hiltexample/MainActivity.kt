@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        //By manual constructor injection all dependencies are gathered together
+        val repository = MainRepository()
+        val factory = MainViewModelFactory(repository)
+        viewModel = ViewModelProvider(this, factory).get(MainViewModel::class.java)
         viewModel.getUsers().observe(this, {
             tvMain.text = it.toString()
         })
