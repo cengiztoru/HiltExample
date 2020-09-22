@@ -1,4 +1,4 @@
-package com.cengiztoru.hiltexample
+package com.cengiztoru.hiltexample.data.model
 
 
 /**

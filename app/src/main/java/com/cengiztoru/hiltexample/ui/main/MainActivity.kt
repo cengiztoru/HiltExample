@@ -1,4 +1,4 @@
-package com.cengiztoru.hiltexample
+package com.cengiztoru.hiltexample.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

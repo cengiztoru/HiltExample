@@ -1,4 +1,4 @@
-package com.cengiztoru.hiltexample
+package com.cengiztoru.hiltexample.ui.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
